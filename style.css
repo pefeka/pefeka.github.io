@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0d0d12;
+    color: #f0f0f5;
+    line-height: 1.7;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header {
+    background-color: #111116;
+    border-bottom: 1px solid #25252e;
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    color: #a78bfa;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: -1px;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.nav a {
+    color: #a1a1b0;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: #a78bfa;
+}
+
+/* ===== ГЛАВНЫЙ ЭКРАН ===== */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 100px 0;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.subtitle {
+    color: #a78bfa;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    letter-spacing: -2px;
+}
+
+.hero h2 {
+    color: #a78bfa;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.description {
+    max-width: 550px;
+    color: #a1a1b0;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #8b5cf6;
+    color: #ffffff;
+    padding: 13px 26px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(139, 92, 246, 0.15);
+}
+
+.button:hover {
+    background-color: #7c3aed;
+    transform: translateY(-3px);
+    box-shadow: 0 0 30px rgba(139, 92, 246, 0.3);
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.avatar {
+    width: 260px;
+    height: 300px;
+    object-fit: cover;
+
+    border: 3px solid #8b5cf6;
+    border-radius: 20px;
+
+    background-color: #15151d;
+
+    box-shadow:
+        0 0 15px rgba(139, 92, 246, 0.4),
+        0 0 40px rgba(139, 92, 246, 0.15);
+
+    transition: 0.3s ease;
+}
+
+.section {
+    padding: 55px 0;
+}
+
+.section-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.card {
+    background-color: #15151d;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #292936;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    border-color: #7650c9;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+}
+
+.card-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 15px;
+
+    filter: drop-shadow(0 0 8px rgba(139, 92, 246, 0.25));
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+div.card-icon {
+    font-size: 80px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+}
+
+.card:hover .card-icon {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 14px rgba(139, 92, 246, 0.5));
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #f0f0f5;
+}
+
+.card p {
+    color: #a1a1b0;
+    font-size: 15px;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.skill {
+    background-color: #1a1727;
+    color: #c4b5fd;
+
+    border: 1px solid #352650;
+    padding: 10px 18px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.skill:hover {
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+.contacts {
+    text-align: center;
+    padding-bottom: 90px;
+}
+
+.contacts p {
+    color: #a1a1b0;
+    margin-bottom: 25px;
+}
+
+.footer {
+    background-color: #111116;
+    border-top: 1px solid #25252e;
+    text-align: center;
+    padding: 25px;
+
+    color: #777787;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+
+    .header .container {
+        flex-direction: column;
+    }
+
+    .nav {
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 65px 0;
+        gap: 35px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero h2 {
+        font-size: 20px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .avatar {
+        width: 190px;
+        height: 190px;
+        font-size: 75px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 27px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .nav {
+        gap: 12px;
+    }
+
+    .nav a {
+        font-size: 13px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+}
+
+.skill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    background-color: #1a1727;
+    color: #c4b5fd;
+
+    border: 1px solid #352650;
+    padding: 10px 18px;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.skill i {
+    font-size: 18px;
+}
+
+.skill:hover {
+    background-color: #8b5cf6;
+    border-color: #8b5cf6;
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+.dota-card {
+    display: left;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+
+    background: #15151d;
+    border: 1px solid #292333;
+    border-radius: 16px;
+    padding: 30px 20px;
+
+    transition: 0.3s ease;
+}
+
+.dota-card .card-icon {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+
+    margin-bottom: 15px;
+    filter: drop-shadow(0 0 10px rgba(139, 92, 246, 0.25));
+
+    transition: 0.3s ease;
+}
+
+.dota-card:hover {
+    transform: translateY(-6px);
+    border-color: #8b5cf6;
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.15);
+}
+
+.dota-card:hover .card-icon {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 15px rgba(139, 92, 246, 0.6));
+}
